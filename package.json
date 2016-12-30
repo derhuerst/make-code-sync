@@ -3,7 +3,7 @@
 	"description": "Makes common async calls like setTimout sync.",
 	"version":     "0.1.0",
 	"main":        "index.js",
-	"files":       ["index.js", "ast-helpers.js"],
+	"files":       ["index.js", "ast-helpers.js", "hooks.js"],
 	"keywords":    ["async", "sync", "setTimout", "transform", "ast"],
 	"author":      "Jannis R <mail@jannisr.de>",
 	"homepage":    "https://github.com/derhuerst/make-code-sync",

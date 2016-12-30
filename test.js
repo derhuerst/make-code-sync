@@ -7,22 +7,9 @@ const vm = require('vm')
 const test = require('tape')
 
 const syncify = require('.')
+const {now, defer} = require('./hooks')
 
 
-
-// todo: move into source code
-const now = (fn, ...args) => {
-	if (fn === setTimeout) return
-	return fn(...args)
-}
-
-// todo: move into source code
-const defer = (calls) => {
-	calls
-	.filter((call) => call.fn === setTimeout)
-	.sort((call1, call2) => call1.args[1] - call2.args[1]) // sort by delay
-	.forEach(({args}) => args[0]()) // call callback synchronously
-}
 
 const run = (code, variable) => {
 	const ast = parse(code, {ecmaVersion: 6})
