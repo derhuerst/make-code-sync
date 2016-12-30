@@ -1,0 +1,14 @@
+{
+	"name":        "make-code-sync",
+	"description": "Makes common async calls like setTimout sync.",
+	"version":     "0.1.0",
+	"main":        "index.js",
+	"files":       ["index.js"],
+	"keywords":    ["async", "sync", "setTimout", "transform", "ast"],
+	"author":      "Jannis R <mail@jannisr.de>",
+	"homepage":    "https://github.com/derhuerst/make-code-sync",
+	"repository":  "derhuerst/make-code-sync",
+	"bugs":        "https://github.com/derhuerst/make-code-sync/issues",
+	"license":     "ISC",
+	"engines":     {"node": ">=6"}
+}
