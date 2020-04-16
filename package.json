@@ -1,7 +1,7 @@
 {
 	"name": "make-code-sync",
 	"description": "Makes common async calls like setTimout sync.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"main": "index.js",
 	"files": [
 		"index.js",

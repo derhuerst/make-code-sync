@@ -65,7 +65,9 @@ const array = (elements) => ({
 
 const object = (props) => ({
 	type: 'ObjectExpression',
-	properties: Object.entries(props).map(([key, value]) => ({
+	properties: Object.keys(props)
+	.map(key => [key, props[key]])
+	.map(([key, value]) => ({
 		type: 'Property', key: identifier(key), value,
 		method: false, computed: false, shorthand: false, kind: 'init'
 	}))
