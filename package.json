@@ -1,7 +1,7 @@
 {
 	"name": "make-code-sync",
 	"description": "Makes common async calls like setTimout sync.",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"main": "index.js",
 	"files": [
 		"index.js",
@@ -21,7 +21,7 @@
 	"bugs": "https://github.com/derhuerst/make-code-sync/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"estraverse": "^5.1.0",
@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"tape": "^4.6",
-		"tap-min": "derhuerst/tap-min",
+		"tap-min": "^2.0.0",
 		"acorn": "^7.1.1",
 		"escodegen": "^1.8.1"
 	},
