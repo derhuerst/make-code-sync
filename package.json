@@ -12,13 +12,13 @@
 	"license":     "ISC",
 	"engines":     {"node": ">=6"},
 	"dependencies": {
-		"javascript-idents": "^1.0.0",
-		"estraverse": "^4.2"
+		"estraverse": "^5.1.0",
+		"javascript-idents": "^1.0.0"
 	},
 	"devDependencies": {
 		"tape": "^4.6",
 		"tap-min": "derhuerst/tap-min",
-		"acorn": "^4.0.3",
+		"acorn": "^7.1.1",
 		"escodegen": "^1.8.1"
 	},
 	"scripts": {
