@@ -1,34 +1,11 @@
 'use strict'
 
-const findIdentifiers = require('javascript-idents').all
 const walk = require('estraverse').replace
 
 const _ = require('./ast-helpers')
 
-
-
-const randomString = (l = 3) => {
-	let id = (Math.random() * 26 + 10 | 0).toString(36)
-	for (let i = 1; i < l; i++)
-		id += (Math.random() * 26 | 0).toString(36)
-	return id
-}
-
-const unusedName = (ast) => {
-	const identifiers = findIdentifiers(ast)
-	return () => {
-		let id = '_' + randomString()
-		while (identifiers.includes(id))
-			id = '_' + randomString()
-		identifiers.push(id)
-		return id
-	}
-}
-
-
-
 const defaults = {
-	unusedName,
+	unusedName: _.unusedName,
 	nameOfNow: null,
 	nameOfDefer: null
 }
