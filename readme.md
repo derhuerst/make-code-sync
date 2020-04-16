@@ -2,6 +2,13 @@
 
 **Makes common async calls like `setTimout` sync.**
 
+[![npm version](https://img.shields.io/npm/v/make-code-sync.svg)](https://www.npmjs.com/package/make-code-sync)
+[![build status](https://api.travis-ci.org/derhuerst/make-code-sync.svg?branch=master)](https://travis-ci.org/derhuerst/make-code-sync)
+![ISC-licensed](https://img.shields.io/github/license/derhuerst/make-code-sync.svg)
+![minimum Node.js version](https://img.shields.io/node/v/make-code-sync.svg)
+[![chat with me on Gitter](https://img.shields.io/badge/chat%20with%20me-on%20gitter-512e92.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
+
 This module takes an [abstract syntax tree (AST)](todo) and transforms it so that all calls to e.g. `setTimeout` will be executed synchronously.
 
 If your code does not use any other async funtions like [`fetch`](todo), it will be easy to do analyses on it or run it using [`vm.runInNewContext`](todo).
@@ -10,12 +17,6 @@ If your code does not use any other async funtions like [`fetch`](todo), it will
 
 - Right now only `setTimeout` works, but I plan to support `setImmediate` as well `setInterval`.
 - The `setTimeout` mock is not spec-compatible. Actually, it is quite lacking.
-
-[![npm version](https://img.shields.io/npm/v/make-code-sync.svg)](https://www.npmjs.com/package/make-code-sync)
-[![build status](https://img.shields.io/travis/derhuerst/make-code-sync.svg)](https://travis-ci.org/derhuerst/make-code-sync)
-[![dependency status](https://img.shields.io/david/derhuerst/make-code-sync.svg)](https://david-dm.org/derhuerst/make-code-sync)
-[![dev dependency status](https://img.shields.io/david/dev/derhuerst/make-code-sync.svg)](https://david-dm.org/derhuerst/make-code-sync#info=devDependencies)
-![ISC-licensed](https://img.shields.io/github/license/derhuerst/make-code-sync.svg)
 
 
 ## Installing
